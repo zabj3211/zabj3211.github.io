@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+          .topnav {
+            overflow: hidden;
+            background-color: #333;
+          }
+          .topnav a {
+              float: left;
+              color: #f2f2f2;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+          }
+          .topnav-right {
+            float: right;
+          }
+          .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+          }
+
+          .topnav a.active {
+          background-color: #4CAF50;
+          color: white;
+      		}
+      	.h1 {
+      		text-align: center;
+      		float: center;
+
+      	}
+      	.card {
+            display:center;
+            background-color: black;
+            .mx-auto;
+
+          }
+          .body{
+          	height: 1000;
+          }
+
+        </style>
+	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+          <nav class="topnav">
+            <a class="nav-link" href="mypage_bootstrap.html">Home</a>
+          
+          <li class="nav-item active">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <div class="topnav-right">
+            <a href="https://github.com/zabj3211/Labs_3308.git" class="fa fa-github"></a>
+          </div>
+          </nav>
+
+	<title></title>
+</head>
+<body>
+	<h1>
+		Add New Interest
+	</h1>
+	<form class="form-horizontal" action="/action_page.php">
+  		<div class="form-group">
+    		<label class="control-label col-sm-2" for="interest">Interest Name:</label>
+    		<div class="col-sm-10">
+      			<input type="interest" class="form-control" id="interest" placeholder= "Name">
+    		</div>
+  		</div>
+  		<div class="form-group">
+    		<label class="control-label col-sm-2" for="openText">Text About Interest:</label>
+    		<textarea class="form-control col-sm-2" id="exampleFormControlTextarea1" rows="3"></textarea>
+  		</div>
+  		
+  		<div class = "row">
+  			<div class = "control-label col-sm-2">
+  				<p>Default file: </p><br>
+  			</div>
+  			
+    		<br><input type="file" id="myFile" name="filename2">
+
+    		<p>Select # of Tweets to Display</p>
+    		<div class="dropdown">
+  				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    				1
+  				</button>
+  				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    				<a class="dropdown-item" href="#">2</a>
+    				<a class="dropdown-item" href="#">3</a>
+    				<a class="dropdown-item" href="#">4</a>
+    				<a class="dropdown-item" href="#">5</a>
+    				<a class="dropdown-item" href="#">All</a>
+  				</div>
+			</div>
+  		</div>
+  		<div class = "control-label col-sm-2">
+  			<p>On a scale of 1-5, how interested in this are you? </p>
+  		</div>
+  		
+  		
+  		<label class="checkbox-inline"><input type="checkbox" value="">1</label>
+		<label class="checkbox-inline"><input type="checkbox" value="">2</label>
+		<label class="checkbox-inline"><input type="checkbox" value="">3</label>
+		<label class="checkbox-inline"><input type="checkbox" value="">4</label>
+		<label class="checkbox-inline"><input type="checkbox" value="">5</label><br>
+
+		<br><p>Login to Finish Submitting</p>
+		<div class="row">
+			<div class = "col-sm-2">
+				
+			</div>
+			<div class="col">
+      			<input type="username" class="form-control" placeholder="Username">
+    		</div>
+    		<div class="col">
+      			<input type="Password" class="form-control" placeholder="Password">
+    		</div>
+			
+			
+      			
+    	</div>
+    	<div class = "col-sm-2">
+    		<br><button type="submit" class="btn btn-primary mb-2">Submit</button>
+    	</div>
+    	
+    		
+    		
+		
+	</form>
+
+</body>
+</html>
